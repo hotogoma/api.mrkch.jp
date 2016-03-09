@@ -1,0 +1,15 @@
+{
+  "name": "api.mrkch.jp",
+  "version": "0.1.0",
+  "description": "API Server",
+  "engines": {
+    "node": "4"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "express": "4"
+  }
+}
