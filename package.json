@@ -7,9 +7,12 @@
   },
   "main": "app.js",
   "scripts": {
-    "start": "node ."
+    "start": "nodemon ."
   },
   "dependencies": {
     "express": "4"
+  },
+  "devDependencies": {
+    "nodemon": "*"
   }
 }
