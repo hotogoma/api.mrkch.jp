@@ -23,14 +23,14 @@ app.get('/', (req, res) => {
   res.json(store);
 });
 
-app.get('/metric', (req, res) => {
+app.get('/metrics', (req, res) => {
   var sec = Math.floor( new Date().getTime() / 1000 );
-  var metric = {
+  var metrics = {
     temperature: Math.round( store.temperature.celsius * 10 ) / 10,
   };
   var arr = [];
-  for ( var key in metric ) {
-    arr.push( [ key, metric[key], sec ].join("\t") );
+  for ( var key in metrics ) {
+    arr.push( [ key, metrics[key], sec ].join("\t") );
   }
   res.send( arr.join("\n") );
 });
