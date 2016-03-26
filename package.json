@@ -10,7 +10,8 @@
     "start": "nodemon ."
   },
   "dependencies": {
-    "express": "4"
+    "express": "4",
+    "johnny-five": "*"
   },
   "devDependencies": {
     "nodemon": "*"
