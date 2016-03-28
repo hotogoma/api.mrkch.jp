@@ -4,7 +4,9 @@ var express = require('express');
 var five = require('johnny-five');
 
 var app = express();
-var board = new five.Board();
+var board = new five.Board({
+  repl: process.env.NODE_ENV !== 'production',
+});
 
 var store = {};
 
